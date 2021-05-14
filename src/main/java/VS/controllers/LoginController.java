@@ -39,7 +39,11 @@ public class LoginController {
         try
         {
             UserService.userExists(usernameField.getText(),passwordField.getText());
+<<<<<<< Updated upstream
          //   logMessage.setText("Successful log in");
+=======
+            //   logMessage.setText("Successful log in");
+>>>>>>> Stashed changes
             if(UserService.checkIsAdmin(usernameField.getText())==true)
             {
                 Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("AdminPage.fxml"));
@@ -50,7 +54,11 @@ public class LoginController {
                 //scene.setMinHeight(1080);
                 //scene.setMinWidth(1920);
                 //scene.setMaxHeight(1080);
+<<<<<<< Updated upstream
                //scene.setMaxWidth(1920);
+=======
+                //scene.setMaxWidth(1920);
+>>>>>>> Stashed changes
                 //scene.setTitle("Client");
                 //scene.setFullScreen(true);
 
@@ -62,9 +70,15 @@ public class LoginController {
                 Stage scene= (Stage) logButton.getScene().getWindow();
                 scene.setScene(new Scene(root,720,490));
                 scene.setResizable(true);
+<<<<<<< Updated upstream
               //  scene.setMinHeight(1080);
                // scene.setMinWidth(1920);
                // scene.setMaxHeight(1080);
+=======
+                //  scene.setMinHeight(1080);
+                // scene.setMinWidth(1920);
+                // scene.setMaxHeight(1080);
+>>>>>>> Stashed changes
                 //scene.setMaxWidth(1920);
                 //scene.setTitle("Client");
                 //scene.setFullScreen(true);
@@ -75,11 +89,19 @@ public class LoginController {
         }
         catch(InvalidUsernameException e)
         {
+<<<<<<< Updated upstream
          //   logMessage.setText(e.getMessage());
 
         }catch(IncorrectPasswordException e)
         {
          //   logMessage.setText(e.getMessage());
+=======
+            //   logMessage.setText(e.getMessage());
+
+        }catch(IncorrectPasswordException e)
+        {
+            //   logMessage.setText(e.getMessage());
+>>>>>>> Stashed changes
         }
 
     }
