@@ -1,4 +1,4 @@
-package VS.Model;
+package VS.model;
 
 import org.dizitart.no2.objects.Id;
 
