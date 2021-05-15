@@ -14,28 +14,7 @@
 <?import javafx.scene.text.Text?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="725.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VS.Controller.LoginController">
-    <!--<left>
-        <AnchorPane prefHeight="400.0" prefWidth="253.0" style="-fx-background-color: #C0C0C0;" BorderPane.alignment="CENTER">
-            <children>
-                <ImageView fitHeight="238.0" fitWidth="296.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@images/img1.jpg" />
-                    </image>
-                </ImageView>
-                <Text layoutX="69.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vintage Shop">
-                    <font>
-                        <Font name="Freestyle Script" size="36.0" />
-                    </font>
-                </Text>
-
-                <ImageView fitHeight="117.0" fitWidth="299.0" layoutX="-3.0" layoutY="405.0" opacity="0.74" pickOnBounds="true" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="-3.0" AnchorPane.rightAnchor="-2.0">
-                    <image>
-                        <Image url="@images/img2.jpg" />
-                    </image>
-                </ImageView>
-            </children>
-        </AnchorPane>
-    </left> -->
+   
     <center>
         <AnchorPane maxHeight="481.0" maxWidth="464.0" prefHeight="481.0" prefWidth="464.0" stylesheets="@style.css" BorderPane.alignment="CENTER">
             <ImageView fitHeight="981.0" fitWidth="964.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
@@ -89,4 +68,5 @@
             </BorderPane.margin>
         </AnchorPane>
     </center>
+    
 </BorderPane>
