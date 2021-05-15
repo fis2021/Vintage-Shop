@@ -1,6 +1,6 @@
-package VS.Controller;
+package VS.controllers;
 
-import VS.Model.User;
+import VS.model.User;
 //import com.sun.javafx.tk.quantum.PaintRenderJob;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
