@@ -1,17 +1,17 @@
-import VS.Controller.AfisareProduse;
-import VS.Services.CartServices;
-import VS.Services.ProduseService;
+import VS.controllers.AfisareProduse;
+import VS.services.CartServices;
+import VS.services.ProduseService;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import VS.Services.UserService;
-import VS.Services.FileSystemService;
+import VS.services.UserService;
+import VS.services.FileSystemService;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Objects;
-import VS.Controller.AfisareProduse;
+import VS.controllers.AfisareProduse;
 public class Main extends Application {
 
         @Override
