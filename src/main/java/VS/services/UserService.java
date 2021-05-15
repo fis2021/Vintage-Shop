@@ -1,14 +1,14 @@
 
 
 
-package VS.Services;
-import VS.Exception.*;
-import VS.Model.User;
+package VS.services;
+import VS.exceptions.*;
+import VS.model.User;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
 
-import VS.Exception.UncompletedFieldsException;
+import VS.exceptions.UncompletedFieldsException;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -17,7 +17,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static VS.Services.FileSystemService.getPathToFile;
+import static VS.services.FileSystemService.getPathToFile;
 
 public class UserService {
 
@@ -32,7 +32,7 @@ public class UserService {
         userRepository = database.getRepository(User.class);
     }
 
-    public static void addUser(String username,String password,String name,String email,String address,String phone) throws VS.Exception.UsernameAlreadyExistException, VS.Exception.NoUpperCaseException, UncompletedFieldsException, VS.Exception.UsernameAlreadyExistException {
+    public static void addUser(String username,String password,String name,String email,String address,String phone) throws VS.exceptions.UsernameAlreadyExistException, VS.exceptions.NoUpperCaseException, UncompletedFieldsException, VS.exceptions.UsernameAlreadyExistException {
         try {
             AllFieldsCompleted(username,password,name,email,address,phone);
         } catch (UncompletedFieldsException e) {
@@ -47,12 +47,12 @@ public class UserService {
     }
 
 
-    private static void checkUserDoesNotAlreadyExist(String username) throws VS.Exception.UsernameAlreadyExistException {
+    private static void checkUserDoesNotAlreadyExist(String username) throws VS.exceptions.UsernameAlreadyExistException {
         Cursor<User> cursor = userRepository.find();
         for (User user : cursor) {
 //            if (Objects.equals(username, user.getUsername()))
             if (username.equals(user.getUsername()))
-            {   throw new VS.Exception.UsernameAlreadyExistException(username);
+            {   throw new VS.exceptions.UsernameAlreadyExistException(username);
 
             }
         }
@@ -68,12 +68,12 @@ public class UserService {
         }
         return false;
     }
-    public static boolean UpperCaseExists(String password) throws VS.Exception.NoUpperCaseException
+    public static boolean UpperCaseExists(String password) throws VS.exceptions.NoUpperCaseException
     {
         Pattern pattern = Pattern.compile("[A-Z]");
         Matcher matcher = pattern.matcher(password);
         boolean matchFound = matcher.find();
-        if(!matchFound) throw new VS.Exception.NoUpperCaseException("Parola trebuie sa contina cel putin o litera de tipar!");
+        if(!matchFound) throw new VS.exceptions.NoUpperCaseException("Parola trebuie sa contina cel putin o litera de tipar!");
         else
             return true;
 
@@ -112,7 +112,7 @@ public class UserService {
         return new String(hashedPassword, StandardCharsets.UTF_8)
                 .replace("\"", ""); //to be able to save in JSON format
     }
-    public static void userExists(String username,String password) throws VS.Exception.InvalidUsernameException, VS.Exception.IncorrectPasswordException {
+    public static void userExists(String username,String password) throws VS.exceptions.InvalidUsernameException, VS.exceptions.IncorrectPasswordException {
         int ok=0,ok2=0;
         for(User user :userRepository.find())
         {
@@ -128,7 +128,7 @@ public class UserService {
         if(ok2==0)
             throw new VS.Exception.IncorrectPasswordException("Parola incorecta!");
     }
-    public static void addAdmin(String username, String password,String name,String email,String address,String phone) throws VS.Exception.NoUpperCaseException, UncompletedFieldsException, VS.Exception.UsernameAlreadyExistException {
+    public static void addAdmin(String username, String password,String name,String email,String address,String phone) throws VS.exceptions.NoUpperCaseException, UncompletedFieldsException, VS.exceptions.UsernameAlreadyExistException {
         try {
             AllFieldsCompleted(username,password,name,email,address,phone);
         } catch (UncompletedFieldsException e) {
