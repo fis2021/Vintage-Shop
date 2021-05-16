@@ -1,6 +1,6 @@
-package VS.Controller;
+package VS.controllers;
 
-import VS.Services.ProduseService;
+import VS.services.ProduseService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
