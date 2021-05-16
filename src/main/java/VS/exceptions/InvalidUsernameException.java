@@ -1,4 +1,4 @@
-package VS.Exception;
+package VS.exceptions;
 
 
 public class InvalidUsernameException extends Exception {
