@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="490.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VS.Controller.VizualizareStatusComanda">
+<VBox prefHeight="490.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VS.controllers.VizualizareStatusComanda">
     <Button mnemonicParsing="false" onAction="#handleButonInapoi" text="Inapoi">
         <VBox.margin>
             <Insets left="20.0" top="20.0" />
