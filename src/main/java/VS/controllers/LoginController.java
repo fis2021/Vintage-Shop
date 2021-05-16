@@ -1,4 +1,4 @@
-package VS.Controller;
+package VS.controllers;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,9 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
-import VS.Exception.IncorrectPasswordException;
-import VS.Exception.InvalidUsernameException;
-import VS.Services.UserService;
+import VS.exceptions.IncorrectPasswordException;
+import VS.exceptions.InvalidUsernameException;
+import VS.services.UserService;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
