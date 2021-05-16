@@ -69,7 +69,7 @@ public class AdminPage {
     }
     public void handleAcceptareRespingereComanda() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("acceptarerespingereprogramare.fxml"));
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("acceptarerespingerecomanda.fxml"));
             Stage stage = (Stage) (AcceptareRespingereComanda.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
