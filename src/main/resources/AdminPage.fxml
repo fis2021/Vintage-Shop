@@ -6,7 +6,7 @@
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<GridPane hgap="2" prefHeight="400" prefWidth="600" stylesheets="@style.css" vgap="3" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VS.Controller.AdminPage">
+<GridPane hgap="2" prefHeight="400" prefWidth="600" stylesheets="@style.css" vgap="3" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VS.controllers.AdminPage">
     <TilePane alignment="CENTER" prefHeight="100" prefWidth="200" style="-fx-background-color:LIGHT_GREY; -fx-border-style: inset; -fx-border-style: outset; -fx-border-color: BLACK;" GridPane.rowIndex="0">
         <Text id="title-text" text="Admin" textAlignment="CENTER"><font>
             <Font name="Bookman Old Style Bold Italic" size="24.0" />
