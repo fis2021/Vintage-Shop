@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<GridPane hgap="2" prefHeight="400.0" prefWidth="572.0" style="-fx-background-color:  #736767;" vgap="3" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VS.Controller.ClientPage">
+<GridPane hgap="2" prefHeight="400.0" prefWidth="572.0" style="-fx-background-color:  #736767;" vgap="3" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="VS.controllers.ClientPage">
     <TilePane alignment="CENTER" prefHeight="101.0" prefWidth="672.0" style="-fx-background-color: #736767; -fx-border-style: inset; -fx-border-style: outset; -fx-border-color: BLACK;" GridPane.rowIndex="0">
         <Text id="title-text" text="CLIENT" textAlignment="CENTER" wrappingWidth="318.00002843141556"><font>
             <Font name="Times new roman" size="20.0" />
