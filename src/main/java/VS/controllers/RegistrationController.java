@@ -1,9 +1,9 @@
 package VS.controllers;
 
 
-import VS.Exception.NoUpperCaseException;
-import VS.Exception.UncompletedFieldsException;
-import VS.Exception.UsernameAlreadyExistException;
+import VS.exceptions.NoUpperCaseException;
+import VS.exceptions.UncompletedFieldsException;
+import VS.exceptions.UsernameAlreadyExistException;
 import VS.services.UserService;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
