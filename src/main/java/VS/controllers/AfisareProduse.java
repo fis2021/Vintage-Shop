@@ -1,7 +1,7 @@
-package VS.Controller;
+package VS.controllers;
 
-import VS.Model.Produs;
-import VS.Services.ProduseService;
+import VS.model.Produs;
+import VS.services.ProduseService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
