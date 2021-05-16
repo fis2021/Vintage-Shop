@@ -1,14 +1,14 @@
 
 
 
-package VS.Services;
-import VS.Exception.*;
-import VS.Model.User;
+package VS.services;
+import VS.exceptions.*;
+import VS.model.User;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.Cursor;
 import org.dizitart.no2.objects.ObjectRepository;
 
-import VS.Exception.UncompletedFieldsException;
+import VS.exceptions.UncompletedFieldsException;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -17,7 +17,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static VS.Services.FileSystemService.getPathToFile;
+import static VS.services.FileSystemService.getPathToFile;
 
 public class UserService {
 
