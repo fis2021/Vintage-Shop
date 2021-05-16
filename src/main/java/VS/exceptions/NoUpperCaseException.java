@@ -1,4 +1,4 @@
-package VS.Exception;
+package VS.exceptions;
 
 public class NoUpperCaseException extends Exception{
     public NoUpperCaseException(String s)
