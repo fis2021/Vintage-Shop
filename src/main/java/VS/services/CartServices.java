@@ -1,13 +1,13 @@
-package VS.Services;
-import VS.Model.Produs;
+package VS.services;
+import VS.model.Produs;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectRepository;
-import VS.Controller.AfisareProduse;
+import VS.controllers.AfisareProduse;
 
-import static VS.Services.FileSystemService.getPathProdusToFile;
-import VS.Controller.AfisareProduse;
+import static VS.services.FileSystemService.getPathProdusToFile;
+import VS.controllers.AfisareProduse;
 
 import java.util.ArrayList;
 
