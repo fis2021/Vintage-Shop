@@ -1,6 +1,6 @@
-package VS.Services;
+package VS.services;
 
-import VS.Model.Produs;
+import VS.model.Produs;
 import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectRepository;
 import javafx.collections.ObservableList;
@@ -8,7 +8,7 @@ import javafx.collections.ObservableList;
 import java.util.ArrayList;
 import java.util.Objects;
 
-import static VS.Services.FileSystemService.getPathProdusToFile;
+import static VS.services.FileSystemService.getPathProdusToFile;
 
 public class ProduseService {
     public static ObjectRepository<Produs> produsRepository;
