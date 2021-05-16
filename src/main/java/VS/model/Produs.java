@@ -1,4 +1,4 @@
-package VS.Model;
+package VS.model;
 
 import java.util.Objects;
 
