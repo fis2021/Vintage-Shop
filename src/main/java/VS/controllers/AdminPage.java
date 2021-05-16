@@ -1,6 +1,6 @@
-package VS.Controller;
+package VS.controllers;
 
-import VS.Model.User;
+import VS.model.User;
 //import com.sun.javafx.tk.quantum.PaintRenderJob;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -69,7 +69,7 @@ public class AdminPage {
     }
     public void handleAcceptareRespingereComanda() throws IOException {
         try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("acceptarerespingereprogramare.fxml"));
+            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("AcceptareRespingereComanda.fxml"));
             Stage stage = (Stage) (AcceptareRespingereComanda.getScene().getWindow());
             stage.setScene(new Scene(root));
             stage.show();
