@@ -1,4 +1,4 @@
-package VS.Services;
+package VS.services;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
