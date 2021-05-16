@@ -1,10 +1,10 @@
-package VS.Controller;
+package VS.controllers;
 
 
 import VS.Exception.NoUpperCaseException;
 import VS.Exception.UncompletedFieldsException;
 import VS.Exception.UsernameAlreadyExistException;
-import VS.Services.UserService;
+import VS.services.UserService;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
