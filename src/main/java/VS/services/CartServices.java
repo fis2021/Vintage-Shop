@@ -6,7 +6,7 @@ import org.dizitart.no2.Nitrite;
 import org.dizitart.no2.objects.ObjectRepository;
 import VS.controllers.AfisareProduse;
 
-import static VS.Services.FileSystemService.getPathProdusToFile;
+import static VS.services.FileSystemService.getPathProdusToFile;
 import VS.controllers.AfisareProduse;
 
 import java.util.ArrayList;
