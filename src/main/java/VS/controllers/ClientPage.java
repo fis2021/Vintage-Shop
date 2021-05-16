@@ -1,10 +1,10 @@
-package VS.Controller;
+package VS.controllers;
 
 //import com.sun.javafx.tk.quantum.PaintRenderJob;
-import VS.Model.Produs;
-import VS.Model.User;
-import VS.Services.CartServices;
-import VS.Services.ProduseService;
+import VS.model.Produs;
+import VS.model.User;
+import VS.services.CartServices;
+import VS.services.ProduseService;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
