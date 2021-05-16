@@ -1,7 +1,7 @@
-package VS.Controller;
+package VS.controllers;
 
-import VS.Model.Produs;
-import VS.Services.CartServices;
+import VS.model.Produs;
+import VS.services.CartServices;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
